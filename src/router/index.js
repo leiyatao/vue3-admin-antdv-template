@@ -2,9 +2,16 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import NProgress  from 'nprogress'
 import 'nprogress/nprogress.css'
 
+
 NProgress.configure({
   showSpinner:false
 })
+
+import { asyncRoutes } from './asyncRoutes'
+// import base from './modules/base.js'
+// import business from './modules/business.js'
+// const asyncRoutes = [base,business]
+
 const router = createRouter({
   history: createWebHashHistory(),
   routes: [

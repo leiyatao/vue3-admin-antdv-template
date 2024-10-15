@@ -7,6 +7,8 @@ import AppSideBar from './components/AppSidebar.vue'
     <a-layout class="main">
       <div>页头</div>
       <a-layout-content class="content">
+        <a-button v-permission="['admin']">admin删除</a-button>
+        <a-button v-permission="['user']">user删除</a-button>
         <div>内容</div>
         <div>内容</div>
         <div>内容</div>
